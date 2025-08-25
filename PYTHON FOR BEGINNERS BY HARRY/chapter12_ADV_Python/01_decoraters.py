@@ -1,11 +1,11 @@
-def decorator(func):
-    def wrapper():
-        print("I am about to execute the function")
-        func()
+def decorator(func): # This is a decorator function
+    def wrapper():  # This is a nested function
+        print("I am about to execute the function") 
+        func()  # This will execute the function passed to the decorator
         print("I have executed the function")
-    return wrapper
+    return wrapper      
 
-@decorator
+@decorator      # This is how we use a decorator
 def say_hello():
     print("Hello")
 
