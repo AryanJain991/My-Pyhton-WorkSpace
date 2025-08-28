@@ -8,7 +8,7 @@ parser.add_argument("operation", choices=["add", "sub", "mul", "div"], help="Ope
 
 args = parser.parse_args()
 
-print(args)
+# print(args)
 
 if(args.operation == "add"):
     print(f"The Result is {args.num1 + args.num2}")
